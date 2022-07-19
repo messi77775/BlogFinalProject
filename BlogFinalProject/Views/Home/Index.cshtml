@@ -1,0 +1,102 @@
+﻿@model BlogFinalProject.Models.BlogUser
+@{
+    ViewData["Title"] = "Home Page";
+ 
+       Layout = "_Layout";
+
+}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>@ViewData["Title"] - BlogFinalProject</title>
+     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    </head>
+
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <h1>Welcome </h1>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   
+                     <form class="d-flex">
+                         <hr/>
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <a class="btn btn-secondary my-2 my-sm-0" type="submit">Search</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+          
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">Welcome to My Friendly Blog!</h1>
+                    <p class="lead mb-0">The best place for first connections and become a family!</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="~/images/Blog1.jpg" alt="card image cap"  />
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title">Let's Find Solutions</h2>
+                            <p class="card-text">We can build a family together, this is not for finding the girl of your dreams but more so finding who you are as a person and connecting with people!</p>
+                               <a class="btn btn-secondary my-2 my-sm-0" href="Home/AboutBlog">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <img class="card-img-top" src="~/images/Blog2.jpg" alt="card image cap"  />
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2022</div>
+                                    <h2 class="card-title h4">The 8 Habits of Highly Effective Bloggers</h2>
+                                    <p class="card-text">Do you want to be a successful blogger? I do. I might be getting a bit obsessed with it, actually.</p>
+                                    <a class="btn btn-secondary my-2 my-sm-0"  href="BlogUsers/More1">Read more →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                               <img class="card-img-top" src="~/images/Blog3.png" alt="card image cap"  />
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2022</div>
+                                    <h2 class="card-title h4"> Pat Flynn</h2>
+                                    <p class="card-text">We can’t talk about Pat without talking about his popular blog, Smart Passive Income (SPI).
+                                    Pat started SPI during his time as an architect to house his study notes for a prestigious industry exam..</p>
+                                    <a class="btn btn-secondary my-2 my-sm-0"  href="BlogUsers/More">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Side widgets-->
+                    <!-- Side widget-->
+                    <div class = "float-md-right">
+                    <div class="card mb-4">
+                        <div class="card-header">Side Widget</div>
+                        <div class="card-body"><p>Feel free to navigate on the non users pages. There are a variety of topices to choose from.
+                            Expand your well being and your knowledge. Share the love, live and subscribe to this bolg page</p></div>
+                    </div>
+               </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+      </body>
+	
+
